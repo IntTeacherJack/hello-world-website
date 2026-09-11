@@ -43,12 +43,24 @@
       color: #555;
       font-size: 1.1rem;
     }
+
+    .duck {
+      margin-top: 1.5rem;
+      font-size: 5rem;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Hello World</h1>
     <p>Welcome to my first website!</p>
+    <div class="duck">&#129414;</div>
   </div>
 </body>
 </html>
